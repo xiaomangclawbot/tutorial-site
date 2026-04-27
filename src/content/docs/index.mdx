@@ -1,0 +1,46 @@
+---
+title: 小芒教程站
+description: 一个面向分发场景的 AI 自动化教程落地页系统。
+template: splash
+hero:
+  tagline: 把每一篇教程都做成一个可长期访问、可复用、可自动化维护的独立页面。
+  actions:
+    - text: 看第一篇教程
+      link: /openclaw/hermes-agent-windows-deployment/
+      icon: right-arrow
+    - text: 了解建站方案
+      link: /roadmap/site-architecture/
+      icon: right-arrow
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 这个站现在先做什么
+
+<CardGrid stagger>
+  <Card title="独立 URL" icon="open-book">
+    每新增一篇教程，都生成一个稳定链接，适合放到视频、公众号、小红书和 X 里直接分发。
+  </Card>
+  <Card title="Markdown 管理" icon="document">
+    教程正文用 Markdown 存放，方便 OpenClaw 直接创建、修改、提交和发布。
+  </Card>
+  <Card title="截图支持" icon="image">
+    操作截图统一放在 public/images/tutorials/ 目录，教程里直接按路径引用。
+  </Card>
+  <Card title="自动发布" icon="setting">
+    后续接 GitHub 和 Cloudflare Pages 后，可以做到写完教程即自动构建和上线。
+  </Card>
+</CardGrid>
+
+## 当前第一篇教程
+
+- [如何把 Hermes Agent 部署到 Windows 电脑上](/openclaw/hermes-agent-windows-deployment/)
+
+## 适合发布的内容类型
+
+- OpenClaw 教程
+- AI 工具教程
+- 自动化发布教程
+- 资源下载说明页
+- 带截图和工具推荐的落地页
