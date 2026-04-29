@@ -1,46 +1,157 @@
 ---
 title: 小芒教程站
-description: 一个面向分发场景的 AI 自动化教程落地页系统。
-template: splash
-hero:
-  tagline: 把每一篇教程都做成一个可长期访问、可复用、可自动化维护的独立页面。
-  actions:
-    - text: 看第一篇教程
-      link: /openclaw/hermes-agent-windows-deployment/
-      icon: right-arrow
-    - text: 了解建站方案
-      link: /roadmap/site-architecture/
-      icon: right-arrow
-      variant: minimal
+description: 把复杂 AI 工具讲成人人看得懂、能照着做的文字教程。
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+<div style="display:flex; flex-direction:column; gap:2.5rem;">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; padding:0.5rem 0 0.25rem;">
+    <div style="display:flex; align-items:center; gap:2rem; flex-wrap:wrap;">
+      <div style="font-size:2rem; font-weight:800; letter-spacing:-0.06em;">jed</div>
+      <div style="display:flex; gap:1.25rem; flex-wrap:wrap; font-size:0.95rem; color:var(--sl-color-text-accent);">
+        <span>首页</span>
+        <span>教程</span>
+        <span>专题</span>
+        <span>归档</span>
+        <span>关于</span>
+      </div>
+    </div>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <span style="font-size:1.2rem; color:#2457ff;">⤴</span>
+      <a href="#newsletter" style="background:linear-gradient(135deg,#2457ff,#3f7bff); color:white; padding:0.7rem 1rem; border-radius:0.9rem; font-weight:700; text-decoration:none; box-shadow:0 10px 24px rgba(46,86,255,0.18);">订阅更新</a>
+    </div>
+  </div>
 
-## 这个站现在先做什么
+  <div style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:2rem; align-items:center;">
+    <div>
+      <div style="font-size:0.95rem; color:#7c3aed; font-weight:600; margin-bottom:1rem;">• AI 教程 · 自动化 · 实战指南</div>
+      <h1 style="font-size:clamp(2.4rem,5vw,4.2rem); line-height:1.08; margin:0 0 1rem; letter-spacing:-0.04em;">把复杂 <span style="color:#2457ff;">AI 工具</span><br />讲成人人看得懂、<br />能照着做的文字教程</h1>
+      <p style="font-size:1.05rem; line-height:1.8; color:var(--sl-color-text-accent); max-width:44rem; margin:0 0 1.5rem;">
+        专注 AI 工具、自动化工作流与建站部署的实战教程，内容清晰易懂，便于搜索、收藏与复用。
+      </p>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="/openclaw/hermes-agent-windows-deployment/" style="display:inline-flex; align-items:center; justify-content:center; padding:0.95rem 1.2rem; border-radius:0.95rem; font-weight:700; text-decoration:none; background:linear-gradient(135deg,#2457ff,#3f7bff); color:white; box-shadow:0 10px 24px rgba(46,86,255,0.18);">查看最新教程 →</a>
+        <a href="#categories" style="display:inline-flex; align-items:center; justify-content:center; padding:0.95rem 1.2rem; border-radius:0.95rem; font-weight:700; text-decoration:none; border:1px solid rgba(36,87,255,0.18); color:var(--sl-color-text); background:white;">浏览专题分类</a>
+      </div>
+    </div>
+    <div style="min-height:22rem; border-radius:1.75rem; border:1px solid rgba(15,23,42,0.06); background:radial-gradient(circle at 80% 20%, rgba(200,170,255,0.18), transparent 28%), radial-gradient(circle at 15% 20%, rgba(87,89,255,0.12), transparent 22%), linear-gradient(to right, rgba(15,23,42,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(15,23,42,0.06) 1px, transparent 1px), white; background-size:auto, auto, 44px 44px, 44px 44px, auto; display:flex; align-items:center; justify-content:center; padding:2rem; position:relative; overflow:hidden;">
+      <div style="font-size:clamp(4rem,10vw,8rem); font-weight:800; letter-spacing:-0.08em; line-height:1;">jed</div>
+      <div style="position:absolute; bottom:1.5rem; left:1.5rem; color:var(--sl-color-text-accent); font-size:0.95rem;">Jed：把复杂 AI 工具，讲成人能用的教程</div>
+    </div>
+  </div>
 
-<CardGrid stagger>
-  <Card title="独立 URL" icon="open-book">
-    每新增一篇教程，都生成一个稳定链接，适合放到视频、公众号、小红书和 X 里直接分发。
-  </Card>
-  <Card title="Markdown 管理" icon="document">
-    教程正文用 Markdown 存放，方便 OpenClaw 直接创建、修改、提交和发布。
-  </Card>
-  <Card title="截图支持" icon="image">
-    操作截图统一放在 public/images/tutorials/ 目录，教程里直接按路径引用。
-  </Card>
-  <Card title="自动发布" icon="setting">
-    后续接 GitHub 和 Cloudflare Pages 后，可以做到写完教程即自动构建和上线。
-  </Card>
-</CardGrid>
+  <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1rem;">
+    <div style="padding:1.3rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+      <div style="font-size:1.8rem; margin-bottom:0.8rem;">📘</div>
+      <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">AI 入门教程</h3>
+      <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">从基础概念到常用工具，适合新手快速上手。</p>
+    </div>
+    <div style="padding:1.3rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+      <div style="font-size:1.8rem; margin-bottom:0.8rem;">🛠️</div>
+      <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">工具实操指南</h3>
+      <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">按步骤拆解具体工具的使用方法与进阶经验。</p>
+    </div>
+    <div style="padding:1.3rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+      <div style="font-size:1.8rem; margin-bottom:0.8rem;">🧩</div>
+      <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">自动化工作流</h3>
+      <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">把重复任务整理成可复用、可执行的实战流程。</p>
+    </div>
+    <div style="padding:1.3rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+      <div style="font-size:1.8rem; margin-bottom:0.8rem;">🗃️</div>
+      <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">建站与部署</h3>
+      <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">记录网站搭建、发布维护与知识沉淀的方法。</p>
+    </div>
+  </div>
 
-## 当前第一篇教程
+  <section>
+    <div style="font-size:0.95rem; color:#7c3aed; font-weight:700; margin-bottom:0.85rem;">• 精选教程</div>
+    <a href="/openclaw/hermes-agent-windows-deployment/" style="text-decoration:none; color:inherit;">
+      <div style="display:grid; grid-template-columns:320px 1fr 56px; gap:1.25rem; padding:1rem; align-items:center; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+        <div style="min-height:10rem; border-radius:1rem; background:linear-gradient(135deg,#e8dcff,#dce9ff); display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:800; letter-spacing:0.12em; color:#111827;">HERMES</div>
+        <div>
+          <div style="font-size:0.9rem; color:#7c3aed; font-weight:700; margin-bottom:0.55rem;">最新教程</div>
+          <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">如何把 Hermes Agent 部署到 Windows 电脑上</h3>
+          <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">手把手教你在 Windows 环境中部署 Hermes Agent，包含环境准备、安装步骤与常见问题解决方案。</p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:0.85rem; font-size:0.9rem; color:var(--sl-color-text-accent);">
+            <span>◷ 25 分钟阅读</span>
+            <span>◉ 2026/04/25</span>
+            <span>✦ AI Agent</span>
+          </div>
+        </div>
+        <div style="width:3rem; height:3rem; border-radius:999px; background:#f8fafc; border:1px solid rgba(15,23,42,0.06); display:flex; align-items:center; justify-content:center; font-size:1.2rem;">→</div>
+      </div>
+    </a>
+  </section>
 
-- [如何把 Hermes Agent 部署到 Windows 电脑上](/openclaw/hermes-agent-windows-deployment/)
+  <section id="categories">
+    <div style="font-size:0.95rem; color:#7c3aed; font-weight:700; margin-bottom:0.85rem;">• 热门教程分类</div>
+    <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1rem;">
+      <div style="padding:1.3rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+        <div style="font-size:1.8rem; margin-bottom:0.8rem;">🎬</div>
+        <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">OpenClaw 教程</h3>
+        <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">OpenClaw 智能体写作、使用技巧、排错更新。</p>
+      </div>
+      <div style="padding:1.3rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+        <div style="font-size:1.8rem; margin-bottom:0.8rem;">🤖</div>
+        <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">AI 工具教程</h3>
+        <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">覆盖主流 AI 工具的使用方法与实战经验。</p>
+      </div>
+      <div style="padding:1.3rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+        <div style="font-size:1.8rem; margin-bottom:0.8rem;">⚡</div>
+        <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">自动化教程</h3>
+        <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">自动化脚本与工作流，提升效率，帮你重复劳动。</p>
+      </div>
+      <div style="padding:1.3rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+        <div style="font-size:1.8rem; margin-bottom:0.8rem;">🗄️</div>
+        <h3 style="margin:0 0 0.5rem; font-size:1.08rem;">建站与部署</h3>
+        <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">从搭建到上线的方法整理，还有与运维相关分享。</p>
+      </div>
+    </div>
+  </section>
 
-## 适合发布的内容类型
+  <section id="newsletter">
+    <div style="display:grid; grid-template-columns:1fr auto; gap:1rem; align-items:center; padding:1.4rem 1.5rem; background:linear-gradient(180deg,#ffffff,#f8fbff); border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+      <div>
+        <h2 style="margin:0 0 0.35rem; font-size:1.5rem;">写清楚的教程，能帮你省下很多时间。</h2>
+        <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">订阅更新，不错过任何一篇实用教程。</p>
+      </div>
+      <a href="/roadmap/site-architecture/" style="background:linear-gradient(135deg,#2457ff,#3f7bff); color:white; padding:0.7rem 1rem; border-radius:0.9rem; font-weight:700; text-decoration:none; box-shadow:0 10px 24px rgba(46,86,255,0.18);">订阅更新</a>
+    </div>
+  </section>
 
-- OpenClaw 教程
-- AI 工具教程
-- 自动化发布教程
-- 资源下载说明页
-- 带截图和工具推荐的落地页
+  <footer style="padding:1.5rem; background:white; border:1px solid rgba(15,23,42,0.08); border-radius:1.4rem; box-shadow:0 8px 24px rgba(15,23,42,0.04);">
+    <div style="display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:1rem;">
+      <div>
+        <div style="font-size:2rem; font-weight:800; letter-spacing:-0.06em; margin-bottom:0.6rem;">jed</div>
+        <p style="margin:0; line-height:1.7; color:var(--sl-color-text-accent);">专注 AI 教程 · 自动化 · 实战指南</p>
+        <p style="margin:1rem 0 0; line-height:1.7; color:var(--sl-color-text-accent);">© 2026 Jed. All rights reserved.</p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 0.75rem; font-size:1rem;">导航</h4>
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:0.55rem; color:var(--sl-color-text-accent);">
+          <li>首页</li>
+          <li>教程</li>
+          <li>专题</li>
+          <li>归档</li>
+          <li>关于</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin:0 0 0.75rem; font-size:1rem;">资源</h4>
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:0.55rem; color:var(--sl-color-text-accent);">
+          <li>所有教程</li>
+          <li>热门专题</li>
+          <li>精选资源</li>
+          <li>更新日志</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin:0 0 0.75rem; font-size:1rem;">社交</h4>
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:0.55rem; color:var(--sl-color-text-accent);">
+          <li>GitHub</li>
+          <li>X</li>
+          <li>Email</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
