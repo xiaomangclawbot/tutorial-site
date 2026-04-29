@@ -6,8 +6,8 @@ export default defineConfig({
 	site: 'https://docs.example.com',
 	integrations: [
 		starlight({
-			title: '小芒教程站',
-			description: 'AI 自动化教程落地页系统，专注 OpenClaw、Hermes Agent、AI 工具与自动化发布。',
+			title: '',
+			description: 'Jed:把复杂 Al工具，讲成人人能用的教程。',
 			social: [],
 			sidebar: [
 				{
